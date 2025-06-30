@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Waffles Paradise - Learn</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <nav class="navbar">
+            <div class="navbar__logo">
+                <span class="navbar__logo-text">
+                    <img src="logo.svg">
+                </span>
+            </div>
+            <div class="navbar__links">
+                <a href="index.html" class="navbar__link">Home</a>
+                <a href="learn.html" class="navbar__link">Learn</a>
+            </div>
+        </nav>
+
+        <section class="hero">
+            <div class="hero__content">
+                <h1 class="hero__title">Learn to Make Waffles</h1>
+                <p class="hero__subtitle">Master the perfect waffle recipe</p>
+            </div>
+            <div class="hero__image">
+                <img src="waffles.svg" alt="Learning Waffles" class="hero__image-svg">
+            </div>
+        </section>
+
+        <section class="recipe">
+            <h2 class="recipe__title">Step-by-Step Recipe</h2>
+            
+            <div class="recipe__steps">
+                <div class="recipe__step">
+                    <div class="recipe__step-number">1</div>
+                    <div class="recipe__step-content">
+                        <h3>Mix Dry Ingredients</h3>
+                        <p>In a large bowl, whisk together 2 cups flour, 2 tablespoons sugar, 2 teaspoons baking powder, and 1/2 teaspoon salt.</p>
+                    </div>
+                </div>
+                
+                <div class="recipe__step">
+                    <div class="recipe__step-number">2</div>
+                    <div class="recipe__step-content">
+                        <h3>Combine Wet Ingredients</h3>
+                        <p>In another bowl, beat 2 eggs, then add 1¾ cups milk and 1/2 cup melted butter. Mix well.</p>
+                    </div>
+                </div>
+                
+                <div class="recipe__step">
+                    <div class="recipe__step-number">3</div>
+                    <div class="recipe__step-content">
+                        <h3>Make the Batter</h3>
+                        <p>Pour the wet ingredients into the dry ingredients. Stir until just combined - don't overmix!</p>
+                    </div>
+                </div>
+                
+                <div class="recipe__step">
+                    <div class="recipe__step-number">4</div>
+                    <div class="recipe__step-content">
+                        <h3>Cook the Waffles</h3>
+                        <p>Preheat your waffle iron. Pour batter and cook for 3-5 minutes until golden brown and crispy.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="tips">
+            <h2 class="tips__title">Pro Tips</h2>
+            
+            <div class="tips__grid">
+                <div class="tips__item" onclick="toggleTip(this)">
+                    <div class="tips__question">
+                        <p>How to get crispy waffles?</p>
+                        <span class="tips__toggle">+</span>
+                    </div>
+                    <div class="tips__answer">
+                        <p>Don't open the waffle iron too early! Wait until steam stops coming out and the waffle is golden brown.</p>
+                    </div>
+                </div>
+                
+                <div class="tips__divider"></div>
+                
+                <div class="tips__item" onclick="toggleTip(this)">
+                    <div class="tips__question">
+                        <p>Can I make the batter ahead of time?</p>
+                        <span class="tips__toggle">+</span>
+                    </div>
+                    <div class="tips__answer">
+                        <p>Yes! You can make batter up to 2 hours ahead. Just give it a gentle stir before using.</p>
+                    </div>
+                </div>
+                
+                <div class="tips__divider"></div>
+                
+                <div class="tips__item" onclick="toggleTip(this)">
+                    <div class="tips__question">
+                        <p>What toppings work best?</p>
+                        <span class="tips__toggle">+</span>
+                    </div>
+                    <div class="tips__answer">
+                        <p>Fresh berries, maple syrup, whipped cream, chocolate chips, or even savory options like bacon and cheese!</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="variations">
+            <h2 class="variations__title">Waffle Variations</h2>
+            <p class="variations__subtitle">Try these delicious variations to spice up your waffle game!</p>
+            
+            <div class="variations__container">
+                <button class="variations__nav variations__nav--prev" onclick="changeVariationSlide(-1)">
+                    <div class="variations__nav-icon"></div>
+                </button>
+                
+                <div class="variations__slides">
+                    <div class="variations__slide">
+                        <div class="variations__content">
+                            <h3>Chocolate Chip</h3>
+                            <p>Add 1/2 cup chocolate chips to your batter for an indulgent treat!</p>
+                        </div>
+                    </div>
+                    <div class="variations__slide">
+                        <div class="variations__content">
+                            <h3>Blueberry Bliss</h3>
+                            <p>Fold in fresh blueberries for a burst of fruity flavor in every bite.</p>
+                        </div>
+                    </div>
+                    <div class="variations__slide">
+                        <div class="variations__content">
+                            <h3>Cinnamon Spice</h3>
+                            <p>Add 1 tsp cinnamon and a pinch of nutmeg for warm, cozy flavors.</p>
+                        </div>
+                    </div>
+                    <div class="variations__slide">
+                        <div class="variations__content">
+                            <h3>Banana Nut</h3>
+                            <p>Mash a ripe banana into the batter and add chopped walnuts.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <button class="variations__nav variations__nav--next" onclick="changeVariationSlide(1)">
+                    <div class="variations__nav-icon"></div>
+                </button>
+            </div>
+        </section>
+
+        <section class="tutorial">
+            <h2 class="tutorial__title">Watch & Learn</h2>
+            <p class="tutorial__subtitle">Follow along with the video tutorial for tips for perfect waffles every time!</p>
+            
+            <div class="tutorial__video">
+                <div class="tutorial__video-embed">
+                    <iframe 
+                        src="https://www.youtube.com/embed/iR64hfkGQeU" 
+                        title="Waffle Making Tutorial" 
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                        allowfullscreen
+                        style="border-radius: 24px; width:100%; height:100%; display:block;">
+                    </iframe>
+                </div>
+                <span class="credits">Video Credits: <a href="https://www.youtube.com/channel/UCTvYEid8tmg0jqGPDkehc_Q" target="_blank" rel="noopener">Preppy Kitchen</a></span>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <div class="footer__container">
+                <div class="footer__logo">
+                    <span class="footer__logo-text">
+                        <img src="logo.svg"/>
+                    </span>
+                </div>
+                <p class="footer__credit">
+                    Made by <a href="https://github.com/harshitkumar9030" target="_blank" rel="noopener">Harshit</a> for <a href="https://hackclub.com" target="_blank" rel="noopener">HackClub</a>
+                </p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
