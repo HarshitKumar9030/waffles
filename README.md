@@ -1,1 +1,3 @@
-<img src="waffles.svg" />
+# Waffles Paradise
+
+<img src="home.svg" />
